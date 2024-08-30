@@ -17,7 +17,7 @@ const Profile = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `https://yourhr-k7wc.onrender.com/${userId}`
+          `https://yourhr-k7wc.onrender.com/api/users/${userId}`
         );
         setUser(response.data);
       } catch (err) {
