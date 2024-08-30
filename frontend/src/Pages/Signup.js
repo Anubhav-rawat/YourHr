@@ -33,7 +33,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "https://yourhr-k7wc.onrender.com",
+        "https://yourhr-k7wc.onrender.com/api/users/signup",
         data
       );
       alert("Signup successful!");
