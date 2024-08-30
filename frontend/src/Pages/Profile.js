@@ -17,7 +17,7 @@ const Profile = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/${userId}`
+          `https://yourhr-k7wc.onrender.com/${userId}`
         );
         setUser(response.data);
       } catch (err) {
@@ -53,7 +53,7 @@ const Profile = () => {
             <div className="profile-item">
               <label>Resume:</label>
               <a
-                href={`http://localhost:5000/${user.resume}`}
+                href={`https://yourhr-k7wc.onrender.com/${user.resume}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
